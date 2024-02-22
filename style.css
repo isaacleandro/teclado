@@ -20,6 +20,7 @@ body {
   flex: 3.94;
   background-color: aqua;
 }
+
 /*Style button standard top..........................................*/
 .standardButtonTop {
   background-color: #000;
@@ -222,14 +223,14 @@ body {
   outline: none;
 }
 
-/*Style button different ..........................................*/
-.Erases {
+/*Button Stylized................................................*/
+.arrowErases {
   background-color: #000;
   color: #fff;
-  font-size: 10px;
+  font-size: 15px;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 5px;
-  width: 26px;
+  width:56px;
   height: 30px;
   border-radius: 7px 7px 6px 6px;
   cursor: pointer;
@@ -249,7 +250,7 @@ body {
   transform: perspective(70px) rotateX(5deg) rotateY(0deg);
 }
 
-.Erases::after {
+.arrowErases::after {
   content: '';
   position: absolute;
   top: 0;
@@ -258,13 +259,13 @@ body {
   right: 0;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
   z-index: -1;
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: inset 4px 0px 0px rgba(255, 255, 255, 0.1),
     inset 4px -8px 0px rgba(0, 0, 0, 0.3);
   transition: all .1s ease-in-out 0s;
 }
 
-.Erases::before {
+.arrowErases::before {
   content: '';
   position: absolute;
   top: 0;
@@ -281,7 +282,7 @@ body {
   transition: all .1s ease-in-out 0s;
 }
 
-.Erases:active {
+.arrowErases:active {
   will-change: transform;
   transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px) scale(0.96);
   height: 30px;
@@ -293,11 +294,11 @@ body {
   transition: all .1s ease-in-out 0s;
 }
 
-.Erases::after:active {
+.arrowErases::after:active {
   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
 }
 
-.Erases:active::before {
+.arrowErases:active::before {
   content: "";
   display: block;
   position: absolute;
@@ -319,7 +320,7 @@ body {
     opacity: 1;
   }
 }
-.Erases:focus {
+.arrowErases:focus {
   outline: none;
 }
 
